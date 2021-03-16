@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>You've Completed! | Choose Your Filter | Web Game by Julius</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/completion.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+</head>
+<body onload="printTodaysDate()">
+    
+    <div id="completion-page">  
+
+        <div class="input-and-certificate">
+            <div class="input">
+                <h2 class="typeyourshithere">Congratulations for completing this difficult task. 
+                    Input your name and you can print this certificate for your own collection!
+                </h2>
+                <input type="text" id="firstName" class="input-text" placeholder="First Name">
+                <button class="nb input-name" type="submit" onclick="inputName()">Submit</button>
+            </div>
+            <div class="certificate">
+                <img class="certificate-img" src="img/certificate.png">
+                <span id="display-name"></span>
+                <div id="today-date"></div>
+                <div id="completion-time">3m 25s</div>
+            </div>
+        </div>
+
+        <div class="wrapper wrapper-2">
+            <a href="javascript:window.print()"><button id="next" class="pb">Print Certificate!</button></a>
+            <a href="index.html"><button id="next" class="dib">Return to Home</button></a>
+        </div>
+    </div>
+    
+    <div id="footer">
+        <div class="background">
+            <div class="background-left">
+                <p class="footer-text"> <i>Copyright</i> &copy; 2020 by Y3866951. All Rights Reserved</p>
+            </div>
+            <div class="background-right">
+                
+            </div>
+        </div>
+    </div>
+    
+    
+    <!--Put JS at the bottom of body-->
+    <script type="text/javascript" src="js/completion.js"></script>
+
+</body>
+</html>

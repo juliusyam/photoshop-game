@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Choose Your Filter | Web Game by Julius</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+</head>
+<body>
+
+    <div id="game-page">
+        
+    <div class="even-bigger-box">
+        <div id="big-box">
+            <canvas id="left-box" width="800" height="800">
+                <img id="original-photo" src="img/pic3.0-original.png">
+                <img id="selected-photo">
+                <img id="photo1" src="img/pic3.1-turquoise-frame.png">
+                <img id="photo2" src="img/pic3.1-yellow-frame.png">
+                <img id="photo3" src="img/pic3.1-pink-frame.png">
+                <img id="photo4" src="img/pic3.1-orange-frame.png">
+            </canvas>
+            <div class="right-box">
+                <button id="style1" class="sb submit-button-1" type="submit" onclick="transformAndSave(this.id, this.dataset.photo)" data-photo="photo1">Turquoise Frame</button>
+                <button id="style2" class="sb submit-button-2" type="submit" onclick="transformAndSave(this.id, this.dataset.photo)" data-photo="photo2">Yellow Frame</button>
+                <button id="style3" class="sb submit-button-3" type="submit" onclick="transformAndSave(this.id, this.dataset.photo)" data-photo="photo3">Pink Frame</button>
+                <button id="style4" class="sb submit-button-4" type="submit" onclick="transformAndSave(this.id, this.dataset.photo)" data-photo="photo4">Orange Frame</button>
+                <div class="pd photo-display-29"></div>
+                <div class="pd photo-display-30"></div>
+                <div class="pd photo-display-31"></div>
+                <div class="pd photo-display-32"></div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <a href="filter3-2.html"><button id="next" class="nb">Next</button></a>
+        </div>
+    </div>
+    
+    
+    
+    
+
+    </div>
+    
+    <div id="footer">
+        <div class="background">
+            <div class="background-left">
+                <p class="footer-text"> <i>Copyright</i> &copy; 2020 by Y3866951. All Rights Reserved</p>
+            </div>
+            <div class="background-right">
+                
+            </div>
+        </div>
+    </div>
+    
+    <!--Put JS at the bottom of body-->
+    <script type="text/javascript" src="js/javascript.js"></script>
+
+</body>
+</html>

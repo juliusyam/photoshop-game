@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Choose Your Filter | Web Game by Julius</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+</head>
+<body>
+
+    <div id="game-page">
+        
+    <div class="even-bigger-box">
+        <div id="big-box">
+            <canvas id="left-box" width="800" height="800">
+                <img id="original-photo" src="img/pic2.0-original.png">
+                <img id="selected-photo">
+                <img id="photo1" src="img/pic-2.1-cyan-accent.png">
+                <img id="photo2" src="img/pic-2.1-turquoise-accent.png">
+                <img id="photo3" src="img/pic-2.1-magenta-accent.png">
+                <img id="photo4" src="img/pic-2.1-dew-yellow-accent.png">
+            </canvas>
+            <div class="right-box">
+                <button id="style1" class="sb submit-button-1" type="submit" onclick="transformAndSave(this.id, this.dataset.photo)" data-photo="photo1">Cyan Accent</button>
+                <button id="style2" class="sb submit-button-2" type="submit" onclick="transformAndSave(this.id, this.dataset.photo)" data-photo="photo2">Turquoise Accent</button>
+                <button id="style3" class="sb submit-button-3" type="submit" onclick="transformAndSave(this.id, this.dataset.photo)" data-photo="photo3">Magenta Accent</button>
+                <button id="style4" class="sb submit-button-4" type="submit" onclick="transformAndSave(this.id, this.dataset.photo)" data-photo="photo4">Dew Yellow Accent</button>
+                <div class="pd photo-display-17"></div>
+                <div class="pd photo-display-18"></div>
+                <div class="pd photo-display-19"></div>
+                <div class="pd photo-display-20"></div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <a href="filter2-2.html"><button id="next" class="nb">Next</button></a>
+        </div>
+    </div>
+    
+    
+    
+    
+
+    </div>
+    
+    <div id="footer">
+        <div class="background">
+            <div class="background-left">
+                <p class="footer-text"> <i>Copyright</i> &copy; 2020 by Y3866951. All Rights Reserved</p>
+            </div>
+            <div class="background-right">
+                
+            </div>
+        </div>
+    </div>
+    
+    <!--Put JS at the bottom of body-->
+    <script type="text/javascript" src="js/javascript.js"></script>
+
+</body>
+</html>

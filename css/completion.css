@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'Brandon-Grotesque-Black';
+    src: url(../font/Brandon_blk.otf);
+}
+
+#completion-page {
+    background-image: url(../img/portfolio-background2.png);
+    background-size: cover;
+    background-position: center center;
+    padding-bottom: 50px;
+}
+
+.input-and-certificate {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 5% auto 20px auto;
+}
+
+@media (max-width: 1000px) {
+    .input-and-certificate {
+        flex-direction: column;
+    }
+    .input {
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+    .certificate {
+        flex-basis: 100%;
+    }
+}
+
+.input {
+    flex-basis: 30%;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+}
+
+.certificate {
+    flex-basis: 70%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+    grid-template-rows: 40% 30% 30%;
+    max-height: 80vh;
+}
+
+.typeyourshithere {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.input-text {
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 60%;
+}
+
+#display-name {
+    font-family: 'Brandon-Grotesque-Black';
+    font-size: 9vw;
+    font-weight: 800;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: -6.5px;
+    text-transform: uppercase;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.certificate-img {
+    width: 100%;
+    height: 80vh;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#today-date {
+    font-weight: 600;
+    font-size: 1.5vw;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+}
+
+#completion-time {
+    font-weight: 600;
+    font-size: 1.5vw;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+}
+
+.input-name {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media print {
+    #navigation, #mainNav, .nav_links, .top-button, .completion-page, .input, .typeyourshithere, .input-text, .nb, .input-name, .dib, .wrapper {
+        display: none;
+    }
+    .certificate {
+        flex-basis: 100%;
+    }
+}
+
+.wrapper-2 {
+    margin-top: 100px;
+}

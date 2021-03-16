@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Choose Your Filter | Web Game by Julius</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+</head>
+<body>
+    
+    <div id="game-page">  
+    
+    <div class="even-bigger-box">
+        <div id="big-box">
+            <canvas id="left-box" width="800" height="800">
+                <img id="original-photo" src="img/pic1.0-original.png">
+                <img id="photo1" src="img/pic1.0-blue-hue.png">
+                <img id="photo2" src="img/pic1.0-cyan-hue.png">
+                <img id="photo3" src="img/pic1.0-pink-hue.png">
+                <img id="photo4" src="img/pic1.0-orange-hue.png">
+            </canvas>
+            <div class="right-box">
+                <button id="hue1" class="sb submit-button-1" type="submit" onclick="transformAndSave(this.id, this.dataset.photo)" data-photo="photo1">Blue Hue</button>
+                <button id="hue2" class="sb submit-button-2" type="submit" onclick="transformAndSave(this.id, this.dataset.photo)" data-photo="photo2">Cyan Hue</button>
+                <button id="hue3" class="sb submit-button-3" type="submit" onclick="transformAndSave(this.id, this.dataset.photo)" data-photo="photo3">Pink Hue</button>
+                <button id="hue4" class="sb submit-button-4" type="submit" onclick="transformAndSave(this.id, this.dataset.photo)" data-photo="photo4">Orange Hue</button>
+                <div class="pd photo-display-1"></div>
+                <div class="pd photo-display-2"></div>
+                <div class="pd photo-display-3"></div>
+                <div class="pd photo-display-4"></div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <a href="filter1-1.html"><button id="next" class="nb" onclick="saveScore();">Next</button></a>
+        </div>
+    </div>
+    
+    </div>
+    
+    <div id="footer">
+        <div class="background">
+            <div class="background-left">
+                <p class="footer-text"> <i>Copyright</i> &copy; 2020 by Y3866951. All Rights Reserved</p>
+            </div>
+            <div class="background-right">
+                
+            </div>
+        </div>
+    </div>
+    
+    <!--Put JS at the bottom of body-->
+    <script type="text/javascript" src="js/javascript.js"></script>
+
+</body>
+</html>
